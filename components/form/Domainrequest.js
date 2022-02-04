@@ -148,10 +148,10 @@ const Form = () =>
 			  	<div className={styles.customMartWrapper}>
 			  		<span className={styles.customMartCategory}>{category.name}</span>
 				  	<div className={styles.customMart}>
-				  		{category.emojis.map( ( emoji, id ) => (
+				  		{category.emojis.map( ( emoji, key ) => (
 							<Emoji
 							  // native={'true'}
-							  key={id}
+							  key={key}
 							  emoji={emoji}
 							  set={'twitter'}
 							  skin={1}
@@ -215,11 +215,12 @@ const Form = () =>
 										<div className={styles.customMartWrapper}>
 									  		<span className={styles.customMartCategory}>Recent</span>
 										  	<div className={styles.customMart}>
-										  		{getStoreEmoji().map( emoji =>
+										  		{getStoreEmoji().map( ( emoji, key ) =>
 									  			{
 									  				return (
 									  					<Emoji
 									  						// native={'true'}
+									  						key={key}
 									  						emoji={emoji}
 									  						set={'twitter'}
 									  						skin={1}
