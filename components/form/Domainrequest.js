@@ -28,7 +28,7 @@ const Form = () =>
 
 	const errorHandler = () =>
 	{
-		setMessage( <div>Error: {sld}</div> );
+		setMessage( "" );
 		
 		setTimeout( () =>
 		{
@@ -76,20 +76,25 @@ const Form = () =>
 				} )
 				.then( res =>
 				{
-					if ( res.status == 201 )
+					if ( res.status !== 201 )
 					{
+						setMessage( <div id="msg"><h2>{sld}.a☕ is taken! :(</h2></div> );
+
 						setReceiver( "" );
 
+						setSld( "" );
+						
 					}
-					else
-					{
-						document.getElementById( "user" ).value = receiver
 
-					}
+					setTimeout( () =>
+					{
+						setMessage( "" );
+
+					}, 2_000 );
 
 					setSld( "" );
 
-				} )
+				} );
 
 			}
 			catch( err )

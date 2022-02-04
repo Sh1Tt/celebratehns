@@ -16,6 +16,9 @@ html, body {
   line-height: calc( 1em + .5rem );
   /*Antialiased*/
   -webkit-font-smoothing: antialiased;
+
+  background-color: rgba( 3, 3, 3, 1 );
+  color: rgba( 255, 255, 255, 1 );
 }
 
 
@@ -42,8 +45,6 @@ time, title, ul, video,
   isolation: isolate;
   height: 100%;
   /*background:  linear-gradient( 183deg, rgba( 8, 8, 8, 1 ), rgba( 32, 32, 32, 1 ), rgba( 46, 46, 46, 1 ), rgba( 8, 8, 8, 1 ) );*/
-  background-color: rgba( 3, 3, 3, 1 );
-  color: rgba( 255, 255, 255, 1 );
 }
 
 input, button, textarea, select
@@ -76,4 +77,40 @@ h1, h2, h3, h4, h5, h6 {
 /*testing layout without colors*/
 * {
   /*outline: 1px solid red;*/
+}
+
+footer
+{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+}
+a
+{
+  color: whitesmoke;
+  font-weight: 500;
+}
+a:hover
+{
+  text-decoration-color: crimson;
+}
+
+a:hover a::before
+{
+  content:  '@';
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+
+#popup
+{
+  display: fixed;
+  top: 15%;
+  height: 4rem;
+  width: 300px;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 897864534567890;
 }

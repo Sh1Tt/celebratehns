@@ -14,16 +14,18 @@
     margin: .2em 0;
     padding: .1775em .375em;
     border: none;
-    background-color: rgba( 255, 255, 255, .5 );
+    background-color: rgba( 255, 255, 255, .275 );
     text-decoration: none;
     text-align: left;
     border-radius: .25em;
     font-size: 18px;
+    color: whitesmoke;
+    font-weight: 450;
 }
 
 	.input:focus
 	{
-		outline: 1px solid dodgerblue;
+		outline: 1px solid rgba( 255, 255, 255, .66 );
 	}
 	
 
