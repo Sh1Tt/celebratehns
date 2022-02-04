@@ -8,7 +8,7 @@ const Nav = ( { logo, menuTree } ) =>
 
 	function onScrollHandler()
 	{
-		setScrolltop( Math.round( window.scrollY ) );
+		setScrollTop( Math.round( window.scrollY ) );
 
 	}
 
@@ -29,7 +29,7 @@ const Nav = ( { logo, menuTree } ) =>
 	}, [] );
 
 	return (
-		<>
+		<nav>
 			<div className={styles.container}>
 				<div id="logo-wrapper"
 					className={styles.logoWrapper}
@@ -42,7 +42,7 @@ const Nav = ( { logo, menuTree } ) =>
 					{menuTree}
 				</div>
 			</div>
-		</>
+		</nav>
 	);
 }
 

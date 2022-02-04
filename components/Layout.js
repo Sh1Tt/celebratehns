@@ -2,7 +2,9 @@ import Nav from "./Nav";
 
 const Layout = ( { children } ) => (
 	<>
-		<Nav />
+		<nav>
+			<Nav />
+		</nav>
 		{children}
 	</>
 )
