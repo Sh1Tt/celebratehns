@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import Image from "next/image";
 
-import Form from "../components/Form/Domainrequest";
+import Form from "../components/form/Domainrequest";
 
 import Footer from "../components/Footer";
 
