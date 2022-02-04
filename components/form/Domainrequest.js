@@ -246,6 +246,7 @@ const Form = () =>
 							>
 								<Emoji
 									// native={'true'}
+									key={key}
 								    emoji={category.emojis[0]}
 									set={'twitter'}
 									skin={1}
